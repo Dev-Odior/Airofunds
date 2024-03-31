@@ -55,25 +55,25 @@ const ProductCard = ({
           <div className="flex justify-between items-center">
             <div className="flex items-center gap-2">
               <img src={location} alt="" />
-              <span className="capitalize text-[14px]">{info?.location}</span>
+              <span className="capitalize text-[12px]">{info?.location}</span>
             </div>
 
             {info?.bedroom && (
-              <>
-                <div className="flex items-center px-3 py-1 gap-2 border-[#979797] border-l border-r">
-                  <img src={bed} alt="" />
-                  <span className="capitalize text-[14px]">
-                    {info?.bedroom} Bedroom
-                  </span>
-                </div>
+              <div className="flex items-center px-4 py-1 gap-2 border-[#979797] border-l border-r">
+                <img src={bed} alt="" />
+                <span className="capitalize text-[12px]">
+                  {info?.bedroom} Bedroom
+                </span>
+              </div>
+            )}
 
-                <div className="flex items-center gap-2">
-                  <img src={baththub} alt="" />
-                  <span className="capitalize text-[14px]">
-                    {info?.bedroom} Bedroom
-                  </span>
-                </div>
-              </>
+            {info?.bedroom && (
+              <div className="flex items-center gap-2">
+                <img src={baththub} alt="" />
+                <span className="capitalize text-[12px]">
+                  {info?.bedroom} Bedroom
+                </span>
+              </div>
             )}
           </div>
         </section>
