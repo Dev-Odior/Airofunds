@@ -1,4 +1,4 @@
 import StyleOne from "./StyleOne";
-import StyleTwo from "./StyleTwo";
+import ProductCard from "./ProductCard";
 
-export { StyleOne, StyleTwo };
+export { StyleOne, ProductCard };

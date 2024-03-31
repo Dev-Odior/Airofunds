@@ -6,7 +6,7 @@ const BodyText = ({ children, className, center, light, white }) => {
       ${white && "text-white"}
         md:text-[12px] 
         font-inter
-        lg:text-[13.2px]
+        lg:text-[13px]
         leading-5
         md:leading-7
         ${center ? "text-center" : "text-justify"}

@@ -1,4 +1,3 @@
-import { GoldBlur } from "../components/displays";
 import { SubHeader } from "../components/text";
 import { TwoCol, ThreeCol } from "./grid";
 
@@ -20,15 +19,6 @@ const CardTemplate = ({
         text={title}
         className={`mb-7 ${className}`}
       />
-
-      {blur && (
-        <GoldBlur
-          height={`186.2px`}
-          width={`126px`}
-          top={top ? top : `45%`}
-          left={left ? left : `45%`}
-        />
-      )}
 
       {three ? (
         <ThreeCol gap={gap}>{children}</ThreeCol>

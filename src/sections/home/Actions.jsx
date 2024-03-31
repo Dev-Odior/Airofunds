@@ -10,7 +10,7 @@ const Actions = () => {
     <Container>
       <CallToAction customImg={homecta}>
         <div className="w-[75%] mx-auto flex flex-col gap-5 items-center justify-center">
-          <Heading first="about" second="airofund" size="text-[30px]" />
+          <Heading first="about" second="Ellington funds" size="text-[30px]" />
           <BodyText light={true} center={true} white={true}>
             Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique
             sapien magna convallis enim quam. Vitae auctor vestibulum viverra

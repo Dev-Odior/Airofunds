@@ -1,4 +1,5 @@
-import { logo } from "../assets/images/home";
+// import { logo } from "../assets/images/home";
+import { logo } from "../assets/images/logo";
 import { Button } from "../components/button";
 import Container from "./Container";
 import Hamburger from "../components/button/Hanburger";
@@ -13,15 +14,15 @@ const Header = () => {
   const { navLinks } = useSelector((store) => store.nav);
 
   return (
-    <header className="flex  border-red-500 glass fixed top-0 z-40 w-full">
+    <header className="flex shadow-md bg-white fixed top-0 z-40 w-full">
       <Container>
         <div className="flex items-center justify-between ">
-          <div className="flex w-2/3 overflow-visible relative ">
+          <div className="flex w-2/3 overflow-visible relative items-center">
             {/* <AnimatePresence> {openNavModal && <NavModal />}</AnimatePresence> */}
             <img
               src={logo}
               alt=""
-              className="h-10 md:h-[50px] mr-10 -ml-2"
+              className="h-7  md:h-[40px] mr-10 -ml-2"
               onClick={() => navigate("/")}
             />
             <div className="relative flex-1">

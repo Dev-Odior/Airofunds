@@ -1,6 +1,4 @@
-import WordWidget from "./WordWidget";
 import ProductsInfo from "./ProductsInfo";
-import HeaderText from "./HeaderText";
 import BodyText from "./BodyText";
 import TextBox from "./TextBox";
 import SubHeader from "./SubHeader";
@@ -18,9 +16,7 @@ import FormInput from "./FormInput";
 export {
   FormInput,
   Heading,
-  WordWidget,
   ProductsInfo,
-  HeaderText,
   BodyText,
   TextBox,
   SubHeader,

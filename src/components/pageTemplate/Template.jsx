@@ -1,7 +1,6 @@
 import { Container } from "../../layouts";
-import { HeaderText } from "../text";
+
 import { CallToAction, Line } from "../ui";
-import { GoldBlur } from "../displays";
 import { motion } from "framer-motion";
 
 const Template = ({ children, first, second, actionTitle, actionBtnText }) => {
@@ -15,21 +14,6 @@ const Template = ({ children, first, second, actionTitle, actionBtnText }) => {
     >
       <Container>
         <div className="relative  w-full lg:w-[85%] mx-auto mb-5 md:mb-10">
-          <GoldBlur position={`-top-[12rem} -left-[13rem] `} />
-
-          <GoldBlur
-            height={`186.2px`}
-            width={`126px`}
-            top={`-40px`}
-            left={`-6rem`}
-          />
-          <HeaderText
-            showArrow={true}
-            first={first}
-            second={second}
-            col={false}
-            className=""
-          />
           <Line />
           {children}
         </div>

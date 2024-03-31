@@ -4,6 +4,7 @@ import btnReducer from "./buttonReducer/btnReducer";
 import productsNavReducer from "./productNav/productsReducer";
 import navReducer from "./nav/navReducer";
 import modalsReducer from "./modals/modalsReducer";
+import servicesReducer from "./servicesReducer/servicesReducer";
 
 const store = configureStore({
   reducer: {
@@ -11,6 +12,7 @@ const store = configureStore({
     productsBenefits: productsNavReducer,
     nav: navReducer,
     modals: modalsReducer,
+    services: servicesReducer,
   },
 });
 
