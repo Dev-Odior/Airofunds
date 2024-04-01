@@ -14,15 +14,15 @@ const Header = () => {
   const { navLinks } = useSelector((store) => store.nav);
 
   return (
-    <header className="flex shadow-md bg-white fixed top-0 z-40 w-full">
+    <header className="flex shadow-md bg-white fixed top-0 z-50 w-full">
       <Container>
-        <div className="flex items-center justify-between ">
+        <div className="flex items-center justify-between py-2">
           <div className="flex w-2/3 overflow-visible relative items-center">
             {/* <AnimatePresence> {openNavModal && <NavModal />}</AnimatePresence> */}
             <img
               src={logo}
               alt=""
-              className="h-7  md:h-[40px] mr-10 -ml-2"
+              className="h-7  md:h-[40px] mr-14 -ml-2"
               onClick={() => navigate("/")}
             />
             <div className="relative flex-1">

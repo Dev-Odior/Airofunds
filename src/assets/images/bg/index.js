@@ -1,6 +1,7 @@
-import heroBG from "./bgOne.png";
-import blueBlur from "./blueBlur.png";
-import goldBlur from "./goldBlur.png";
-import titleBlur from "./titleBlur.png";
+import project from "./project.jpeg";
+import agriculture from "./agriculture.jpeg";
+import restaurant from "./restaurant.jpeg";
+import transportation from "./transportation.jpeg";
+import crowdfunding from "./crowdfunding.jpeg";
 
-export { heroBG, blueBlur, goldBlur, titleBlur };
+export { project, agriculture, restaurant, transportation, crowdfunding };
