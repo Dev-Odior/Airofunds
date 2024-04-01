@@ -29,9 +29,9 @@ const Delete = () => {
     <Page first={`Account Deletion`} second={`Request`}>
       <BodyText>
         Please fill the form below to request for the deletion of your account
-        with Airopay Permanently remove your Personal Account and it's data from
-        the Airopay platform.This action is not reversible, so please continue
-        with caution.
+        with Ellington Fund Permanently remove your Personal Account and it's
+        data from the Ellington Fund platform.This action is not reversible, so
+        please continue with caution.
       </BodyText>
       <form className="mb-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">

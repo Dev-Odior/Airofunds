@@ -65,7 +65,7 @@ export const homeServices = [
     img: donation,
     largeImg: mortgageLg,
     title: "Mortgage Investment",
-    id: "mortgage-investment",
+    id: "mortgages",
     desc: "Our mortgage investment opportunities cater to the growing demand for efficient and sustainable housing solutions. Partner with Ellington funds to invest in the future of mortgage.",
   },
 ];

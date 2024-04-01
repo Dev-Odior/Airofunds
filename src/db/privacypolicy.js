@@ -1,21 +1,21 @@
 const disclaimer = {
   title: "Disclaimers",
-  desc: 'We try to keep Airopay available at all times, bug-free and safe, however, you use it at your own risk. Our website and services are provided "as is" without any express, implied and/or statutory warranties (including, but not limited to, any implied or statutory warranties of merchantability, fitness for a particular use or purpose, title, and non-infringement of intellectual property rights) without limiting the generality of the foregoing, Airopay makes no warranty that our website and services will meet your requirements or that our website will be uninterrupted, timely, secure, or error free. Nddso advice or information, whether oral or written, obtained by you through our website or from Airopay, its parents, subsidiaries, or other affiliated companies, or its or their suppliers (or the respective officers, directors, employees, or agents of any such entities) (collectively, "Airopay parties") shall create any warranty.',
+  desc: 'We try to keep Ellington Fund available at all times, bug-free and safe, however, you use it at your own risk. Our website and services are provided "as is" without any express, implied and/or statutory warranties (including, but not limited to, any implied or statutory warranties of merchantability, fitness for a particular use or purpose, title, and non-infringement of intellectual property rights) without limiting the generality of the foregoing, Ellington Fund makes no warranty that our website and services will meet your requirements or that our website will be uninterrupted, timely, secure, or error free. Nddso advice or information, whether oral or written, obtained by you through our website or from Ellington Fund, its parents, subsidiaries, or other affiliated companies, or its or their suppliers (or the respective officers, directors, employees, or agents of any such entities) (collectively, "Ellington Fund parties") shall create any warranty.',
 };
 
 const limitation = [
   "Any indirect, special, consequential, punitive, or exemplary damages or",
-  "Any damages whatsoever in excess of the amount of the transaction or five thousand united states dollars (us$5,000.00), whichever is lesser (including, without limitation, those resulting from loss of revenues, lost profits, loss of goodwill, loss of use, business interruption, or other intangible losses), arising out of or in connection with Airopay’’’s website or services (including, without limitation, use, inability to use, or the results of use of Airopay’s websites or services), whether such damages are based on warranty, contract, tort, statute, or any other legal theory.",
+  "Any damages whatsoever in excess of the amount of the transaction or five thousand united states dollars (us$5,000.00), whichever is lesser (including, without limitation, those resulting from loss of revenues, lost profits, loss of goodwill, loss of use, business interruption, or other intangible losses), arising out of or in connection with Ellington Fund’’’s website or services (including, without limitation, use, inability to use, or the results of use of Ellington Fund’s websites or services), whether such damages are based on warranty, contract, tort, statute, or any other legal theory.",
 ];
 
 const exclusions = {
   title: "Exclusion",
-  desc: "Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for certain damages. Accordingly, some of the above disclaimers and limitations of liability may not apply to you. To the extent that any Airopay Party may not, as a matter of applicable law, disclaim any implied warranty or limit its liabilities, the scope and duration of such warranty and the extent of the Airopay Party's liability shall be the minimum permitted under such applicable law.",
+  desc: "Some jurisdictions do not allow the exclusion of certain warranties or the limitation or exclusion of liability for certain damages. Accordingly, some of the above disclaimers and limitations of liability may not apply to you. To the extent that any Ellington Fund Party may not, as a matter of applicable law, disclaim any implied warranty or limit its liabilities, the scope and duration of such warranty and the extent of the Ellington Fund Party's liability shall be the minimum permitted under such applicable law.",
 };
 
 const indemnity = {
   title: "Indemnity",
-  desc: "You agree to defend, indemnify, and hold Airopay, its officers, directors, employees, agents, licensors, and suppliers, harmless from and against any claims, actions or demands, liabilities and settlements including without limitation, reasonable legal and accounting fees, resulting from, or alleged to result from, your violation of this Agreement.",
+  desc: "You agree to defend, indemnify, and hold Ellington Fund, its officers, directors, employees, agents, licensors, and suppliers, harmless from and against any claims, actions or demands, liabilities and settlements including without limitation, reasonable legal and accounting fees, resulting from, or alleged to result from, your violation of this Agreement.",
 };
 
 const applicableLaw = {
@@ -39,7 +39,7 @@ const miscellaneous = {
 };
 const aup = {
   title: "Acceptable Use Policy",
-  desc: "By accessing or using Airopay, you agree to comply with the terms and conditions of this Acceptable Use Policy.",
+  desc: "By accessing or using Ellington Fund, you agree to comply with the terms and conditions of this Acceptable Use Policy.",
 };
 
 const restrictedActivities = [
@@ -72,7 +72,7 @@ const businessRelates = [
   "obscene material or pornography",
   "certain sexually oriented materials or services",
   "certain firearms, firearm parts or accessories, ammunition, weapons, or knives",
-  "any product or service that is illegal or marketed or sold in such a way as to create liability to Airopay",
+  "any product or service that is illegal or marketed or sold in such a way as to create liability to Ellington Fund",
 ];
 
 const businessTransaction = [
@@ -80,13 +80,13 @@ const businessTransaction = [
   "support pyramid or Ponzi schemes, matrix programs, other 'get rich quick' schemes or certain multi-level marketing programs",
   "are associated with purchases of annuities or lottery contracts, lay-away systems, offshore banking, or transactions to finance or refinance debts funded by a credit card.",
   "pertain to ammunitions and arms; and",
-  "involve gambling, gaming and/or any other activity with an entry fee and a prize, including, but not limited to casino games, sports betting, horse or greyhound racing, lottery tickets, other ventures that facilitate gambling, games of skill (whether or not it is legally defined as a lottery) and sweepstakes unless the operator has obtained prior approval from AiroMoni and the operator and customers are located exclusively in jurisdictions where such activities are permitted by law.",
+  "involve gambling, gaming and/or any other activity with an entry fee and a prize, including, but not limited to casino games, sports betting, horse or greyhound racing, lottery tickets, other ventures that facilitate gambling, games of skill (whether or not it is legally defined as a lottery) and sweepstakes unless the operator has obtained prior approval from Ellington Fund and the operator and customers are located exclusively in jurisdictions where such activities are permitted by law.",
 ];
 
 const action = [
   "Blocking the settlement or completion of one or more payments.",
-  "Suspending, restricting, or terminating your access to and use of the Airopay’s Services.",
-  "Terminating our business relationship with you, including termination without liability to Airopay of any payment service agreement between you and Airopay.",
+  "Suspending, restricting, or terminating your access to and use of the Ellington Fund’s Services.",
+  "Terminating our business relationship with you, including termination without liability to Ellington Fund of any payment service agreement between you and Ellington Fund.",
   "Taking legal action against you.",
   "Contacting and disclosing information related to such violations to",
 ];

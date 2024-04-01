@@ -16,32 +16,22 @@ export const nav = [
     title: "services",
     icon: "bi bi-search",
     active: true,
+
     sub: [
+      { title: "Property Investment", route: "/services/crowdfunding" },
       {
-        title: "technology",
-        sub: [
-          { title: "Our platform", route: "/technology/ourplatform" },
-          { title: "Composable approach", route: "/technology/composability" },
-          { title: "Multi-cloud approach", route: "/technology/multicloud" },
-          { title: "Process orchestration", route: "/technology/process" },
-          {
-            title: "Configuration as code",
-            route: "/technology/configuration",
-          },
-          { title: "Security and compliance", route: "/technology/security" },
-        ],
+        title: "Agriculture Investment",
+        route: "/services/agricultural-investment",
       },
+      { title: "Project funding", route: "/services/project-funding" },
+      { title: "Restaurant", route: "/services/restaurant" },
       {
-        title: "services",
-        sub: [
-          { title: "enablement", route: "/technology/enablement" },
-          { title: "advisory", route: "/technology/advisory" },
-        ],
+        title: "Transportation",
+        route: "/services/transportation",
       },
-      {
-        title: "ecosystem",
-        sub: [{ title: "developer", route: "/technology/devs" }],
-      },
+      { title: "Donations", route: "/technology/donations" },
+      { title: "Donations", route: "/services/donations" },
+      { title: "Mortgages", route: "/services/mortgages" },
     ],
   },
   {

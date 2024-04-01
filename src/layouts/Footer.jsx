@@ -21,7 +21,7 @@ const Footers = () => {
 
   return (
     <div className="bg-[#212121]  py-16">
-      <Container>
+      <Container className={`w-[92%] md:w-[90%]`}>
         <div className="flex justify-between flex-col md:flex-row">
           {/* For the logo on the left  */}
           <div className="w-60 flex mb-7 flex-col items-start justify-between">
@@ -36,7 +36,7 @@ const Footers = () => {
           </div>
 
           {/* main right container */}
-          <div className="flex gap-28 ">
+          <div className="flex gap-10 md:gap-28 flex-col md:flex-row">
             <div className="flex flex-col">
               <section className="flex  gap-16 mb-5">
                 {/* services */}
@@ -112,28 +112,3 @@ const Footers = () => {
   );
 };
 export default Footers;
-
-<div className="mt-20">
-  <div className="flex gap-0 md:gap-[185px] items-center justify-between md:justify-end">
-    <span className="text-[9px] md:text-sm font-inter text-footerDark-slightOff font-medium">
-      © Ellington Funds Ltd. All rights reserved
-    </span>
-    <FooterBtn className="mb-3" />
-  </div>
-  <div className="relative  overflow-hidden h-28 bg-black rounded-xl w-full border-white">
-    {/* The image green */}
-    <img
-      className="absolute h-full w-full object-cover top-0 right-0"
-      src={footerGreen}
-    ></img>
-
-    {/* Explore our success */}
-    <div className="absolute ml-10 h-full flex flex-col justify-center  text-[11px] text-[#ADB3AB]">
-      <span className="capitalize block ">Explore</span>
-      <span>our success</span>
-    </div>
-
-    {/* The arrow img */}
-    <img className="absolute right-0 h-full" src={footerImgUp} alt="" />
-  </div>
-</div>;

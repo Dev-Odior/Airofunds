@@ -5,6 +5,6 @@ export const widgetContent = [
   },
   {
     title: "Go Above the market",
-    desc: "You need a high-velocity operating model-only achievable with Airopay-to be competitive. Our lives are not counted in years, but rather in days and weeks.Additionally, you are the future-proofed with airopay's low-code methodology, single code base, publicly accessible API's and frequent releases, allowing you to iterate continually without any interruptions",
+    desc: "You need a high-velocity operating model-only achievable with Ellington Fund-to be competitive. Our lives are not counted in years, but rather in days and weeks.Additionally, you are the future-proofed with Ellington Fund's low-code methodology, single code base, publicly accessible API's and frequent releases, allowing you to iterate continually without any interruptions",
   },
 ];

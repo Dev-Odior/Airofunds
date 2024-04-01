@@ -50,7 +50,7 @@ const DisclaimerMobile = () => {
       >
         <div className="flex items-center gap-4 justify-center relative mb-3">
           <DisclaimerText font={true}>
-            <b>Airopay’s Disclaimer</b>
+            <b>Ellington Fund’s Disclaimer</b>
           </DisclaimerText>
           <img
             src={close}
@@ -62,10 +62,10 @@ const DisclaimerMobile = () => {
 
         <DisclaimerText>
           <span className="font-bold">Press Release Disclaimer:</span>
-          Airopay and Airomoni <b>Not</b>
-          <br className="md:hidden" /> <b>Affiliated with Airopay</b>{" "}
-          <br className="md:hidden" /> Chase Bank, Airopay Investment Platform,
-          Airopay SA <br className="md:hidden" />
+          Ellington Fund and Ellington Fund <b>Not</b>
+          <br className="md:hidden" /> <b>Affiliated with Ellington Fund</b>{" "}
+          <br className="md:hidden" /> Chase Bank, Ellington Fund Investment
+          Platform, Ellington Fund SA <br className="md:hidden" />
           or any other associated <br className="md:hidden" />
           platform with the brand names.
         </DisclaimerText>
@@ -73,16 +73,17 @@ const DisclaimerMobile = () => {
         <DisclaimerText>
           It has been brought to our attention that fake accounts{" "}
           <br className="md:hidden" /> with the usernames ,
-          <br className="md:hidden" /> "airopay sa" , “Airopay Investment
-          Platform “and ,<br className="md:hidden" />
-          "Airopay_chase_bank" have <br className="md:hidden" /> been created on
-          social media platforms such as <br className="md:hidden" /> Instagram
-          and YouTube.
+          <br className="md:hidden" /> "Ellington Fund sa" , “Ellington Fund
+          Investment Platform “and ,<br className="md:hidden" />
+          "Ellington Fund_chase_bank" have <br className="md:hidden" /> been
+          created on social media platforms such as <br className="md:hidden" />{" "}
+          Instagram and YouTube.
           <br className="md:hidden" /> These accounts have been going about
           cloning the <br className="md:hidden" /> designs and videos from{" "}
-          <br className="md:hidden" /> the real pages of Airopay on Instagram,
-          which is <br className="md:hidden" /> @airopayinc, @airomoni and{" "}
-          <br className="md:hidden" /> on YouTube "Airopay Inc".
+          <br className="md:hidden" /> the real pages of Ellington Fund on
+          Instagram, which is <br className="md:hidden" /> @Ellington Fundinc,
+          @Ellington Fund and <br className="md:hidden" /> on YouTube "Ellington
+          Fund Inc".
         </DisclaimerText>
 
         <DisclaimerText>
@@ -90,7 +91,7 @@ const DisclaimerMobile = () => {
             We only operate in Nigeria, UAE, UK & USA.
           </span>{" "}
           <br className="md:hidden" />
-          We want to clarify that Airopay and Airomoni are{" "}
+          We want to clarify that Ellington Fund and Ellington Fund are{" "}
           <br className="md:hidden" />
           not in any way associated with <br className="md:hidden" />
           these fake accounts and would like to warn the{" "}

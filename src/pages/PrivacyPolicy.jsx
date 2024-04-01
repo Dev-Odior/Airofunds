@@ -29,23 +29,35 @@ const Ul = ({ arr, children, type }) => {
   );
 };
 
+export const TitleText = ({ title, desc }) => {
+  return (
+    <div>
+      <h5 className="font-semibold text-lg font-inter mb-3">{title}</h5>
+      <BodyText>{desc}</BodyText>
+    </div>
+  );
+};
+
 const PrivacyPolicy = () => {
   return (
     <Page first={`Privacy`} second={`Policy`}>
+      <HeaderBody dark={true} first={`Privacy`} second={`Policy`} />
       <BodyText>
-        Airopay is committed to managing your Personal Information in line with
-        global industry best practices. You can read our Privacy Policy to
-        understand how we use your information and the steps we take to protect
-        your information.
+        Ellington Funds is committed to managing your Personal Information in
+        line with global industry best practices. You can read our Privacy
+        Policy to understand how we use your information and the steps we take
+        to protect your information.
       </BodyText>
-      <HeaderBody title={disclaimer.title} desc={disclaimer.desc} />
-      <HeaderBody title={`Limitation of Liability`} />
+
+      <TitleText title={disclaimer.title} desc={disclaimer.desc} />
+
+      <TitleText title={`Limitation of Liability`} />
       <Ul obj={limitation}>
-        In no event will Airopay or its parent company be liable for
+        In no event will Ellington Funds or its parent company be liable for
       </Ul>
-      <HeaderBody title={exclusions.title} desc={exclusions.desc} />
-      <HeaderBody title={indemnity.title} desc={indemnity.desc} />
-      <HeaderBody title={`Updates, Modifications & Amendments`} />
+      <TitleText title={exclusions.title} desc={exclusions.desc} />
+      <TitleText title={indemnity.title} desc={indemnity.desc} />
+      <TitleText title={`Updates, Modifications & Amendments`} />
       <BodyText>
         We may need to update, modify, or amend our Agent{" "}
         <a>Terms of Service</a> as our technology evolves. We reserve the right
@@ -56,19 +68,21 @@ const PrivacyPolicy = () => {
         Agent <a>Terms of Service</a>, you must cease using our website and/or
         services immediately.
       </BodyText>
-      <HeaderBody title={legalDispute.title} desc={legalDispute.desc} />
-      <HeaderBody title={severability.title} desc={severability.desc} />
-      <HeaderBody title={miscellaneous.title} desc={miscellaneous.desc} />
-      <HeaderBody title={aup.title} desc={aup.desc} />
-      <HeaderBody title={`Restricted Activities`} />
+
+      <TitleText title={legalDispute.title} desc={legalDispute.desc} />
+
+      <TitleText title={severability.title} desc={severability.desc} />
+      <TitleText title={miscellaneous.title} desc={miscellaneous.desc} />
+      <TitleText title={aup.title} desc={aup.desc} />
+      <TitleText title={`Restricted Activities`} />
 
       <Ul arr={restrictedActivities} type={`list-disc`}>
-        You may not use Airopay in connection with any product, service,
+        You may not use Ellington Funds in connection with any product, service,
         transaction, or activity that:
       </Ul>
-      <HeaderBody title={`Certain Business Categories`} />
+      <TitleText title={`Certain Business Categories`} />
       <Ul type={`list-disc`}>
-        You may not use Airopay in connection with any product, service,
+        You may not use Ellington Funds in connection with any product, service,
         transaction, or activity that:
         <li>
           Falls within the Prohibition List of the Nigerian Customs
@@ -87,13 +101,14 @@ const PrivacyPolicy = () => {
           })}
         </ol>
       </Ul>
-      <HeaderBody title={`Actions by Airopay`} />
+      <TitleText title={`Actions by Ellington Funds`} />
       <Ul type={`list-disc`}>
         If, in our sole discretion, we believe that you may have engaged in any
         violation of this Acceptable Use Policy, we may (with or without notice
         to you) take such actions as we deem appropriate to mitigate risk
-        to Airopay and any impacted third parties and to ensure compliance with
-        this Acceptable Use Policy. Such actions may include, without limitation
+        to Ellington Funds and any impacted third parties and to ensure
+        compliance with this Acceptable Use Policy. Such actions may include,
+        without limitation
         {action.map((each, index) => {
           return <li key={index}>{each}</li>;
         })}
@@ -108,7 +123,7 @@ const PrivacyPolicy = () => {
           such violations, which you agree to pay promptly upon notice.
         </li>
       </Ul>
-      <HeaderBody
+      <TitleText
         title={`Updates, Modifications & Amendments`}
         desc={`We may need to update, modify, or amend our Acceptable Use Policy at any time. We reserve the right to make changes to this Acceptable Use Policy.We advise that you check this page often, referring to the date of the last modification on the page.`}
       />

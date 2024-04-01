@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
 import { SidebarItem } from "../components/sidebar";
 import { CloseButton } from "../components/button";
-import { sidebarLogo } from "../assets/images/general";
+import { logo } from "../assets/images/logo";
 
 const SideBar = () => {
   const { nav } = useSelector((store) => store.nav);
@@ -42,7 +42,7 @@ const SideBar = () => {
           return <SidebarItem key={index} links={links} />;
         })}
       </div>
-      <img src={sidebarLogo} alt="" className="mx-auto" />
+      <img src={logo} alt="" className="h-10 mx-auto" />
     </motion.div>
   );
 };

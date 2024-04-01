@@ -24,7 +24,7 @@ const ImageLooper = ({ images }) => {
   }, [images]);
 
   return (
-    <div className="  flex flex-no-wrap ">
+    <div className="  flex flex-no-wrap gap-4 md:gap-5 -ml-4 md:ml-4 z-50">
       {images.map((image, index) => {
         const bgIndex = (index + currentIndex) % images.length;
         const style = {
@@ -37,7 +37,7 @@ const ImageLooper = ({ images }) => {
           <div
             key={index}
             style={style}
-            className="flex-shrink-0 w-[10rem] h-[200px] m-5 rounded-lg"
+            className="flex-shrink-0 z-40 w-[5rem] h-[100px] md:w-[10rem] md:h-[200px]  rounded-lg"
           ></div>
         );
       })}
@@ -94,34 +94,30 @@ const Hero = () => {
   }, [index]);
 
   return (
-    // <main className=" bg-black">
-    //   <Container>This is working</Container>
-    // </main>
-
     <main
       className="relative h-screen bg-cover bg-center transition-all duration-1000"
       style={{ backgroundImage: `url(${bg[index].img})` }}
     >
       {/* Black overlay covering half of the width */}
-      <div className="absolute inset-y-0 left-0 bg-black opacity-70 w-1/2"></div>
+      <div className="absolute inset-y-0 left-0 bg-black opacity-70 w-full md:w-1/2"></div>
 
       {/* Content container */}
 
-      <Container className="h-full  grid grid-cols-2">
-        <div className=" z-30 self-center px-5 font-poppins text-white  mt-8">
-          <div className="w-[50%] mb-4">
-            <div className="glass  border-2 py-3 text-center rounded-lg uppercase transition-all duration-1000 text-[11px]">
+      <Container className="h-full  grid grid-cols-1 md:grid-cols-2 py-5">
+        <div className=" z-30 self-center px-1 md:px-5 font-poppins text-white mt-8">
+          <div className="w-[55%] md:w-[50%] mb-4">
+            <div className="glass border-2 py-3 text-center rounded-lg uppercase transition-all duration-1000 text-[9px] md:text-[11px]">
               {bg[index].name}
             </div>
           </div>
 
-          <h1 className="text-[2.5rem] leading-[3rem] font-semibold  capitalize ">
+          <h1 className="text-[2rem] md:text-[2.5rem] leading-[2.5rem] md:leading-[3rem] font-semibold  capitalize ">
             Your Trusted Partner for Innovative{" "}
             <span className="text-[#FFBD00]">Investments</span> and{" "}
             <span className="text-[#FFBD00]">Fundraising</span>
           </h1>
 
-          <p className=" my-7 text-white font-poppins text-sm">
+          <p className="my-5 md:my-7 text-white font-poppins text-[12px] md:text-sm">
             Empowering Your Financial Goals Across Industries
           </p>
 
@@ -131,7 +127,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="self-end">
+        <div className="self-end  md:block">
           <ImageLooper images={bg} />
         </div>
       </Container>

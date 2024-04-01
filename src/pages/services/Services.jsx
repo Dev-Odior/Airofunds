@@ -19,7 +19,7 @@ const ServicesNav = () => {
   };
 
   return (
-    <div className="-mt-3">
+    <div className="-mt-3 md:block hidden">
       <Slider>
         {nav?.map((each, index) => {
           return (

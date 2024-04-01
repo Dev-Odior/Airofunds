@@ -19,6 +19,18 @@ const LearnMore = () => {
     dispatch(moreInfoHandler(id));
   }, []);
 
+  const Span = ({ two, children, className }) => {
+    return (
+      <span
+        className={` ${className} ${
+          two ? "text-[13px] font-bold" : "text-[10px]"
+        }`}
+      >
+        {children}
+      </span>
+    );
+  };
+
   const backHandler = () => {
     navigate(`/services/${products}`);
   };
@@ -28,12 +40,12 @@ const LearnMore = () => {
       <Container>
         <button
           onClick={backHandler}
-          className="border border-[#212121] py-2 text-center px-10 rounded-full mb-5 text-sm"
+          className="border border-[#212121] py-1 md:py-2 text-center px-5 md:px-10 rounded-full mb-5 text-sm"
         >
           <span className="mr-2">←</span>
           Back
         </button>
-        <div className="flex gap-2 items-stretch">
+        <div className="flex flex-col md:flex-row gap-2 items-stretch">
           <div>
             <img src={productInfo?.extraImages[0]} alt="" />
           </div>
@@ -54,31 +66,37 @@ const LearnMore = () => {
 
           <BodyText>{productInfo?.desc}</BodyText>
 
-          <section className="flex gap-10  mb-3">
+          <section className="flex gap-1 md:gap-10  flex-col md:flex-row mb-3">
             <div className="w-[100%] ">
               <h4 className="font-semibold capitalize text-lg">overview</h4>
               <BodyText>{productInfo?.overview}</BodyText>
             </div>
 
             {!productInfo?.mortgage && (
-              <div className="  flex flex-col gap-3 w-[40%]">
+              <div className="  flex flex-col gap-3 md:w-[40%]">
                 <h4 className="font-semibold text-lg capitalize">financials</h4>
 
                 <div className="flex justify-between ">
-                  <span className="text-[10px]">Property Price</span>
-                  <span className="text-[13px] font-bold">{`₦${productInfo?.financials?.propertyPrice?.toLocaleString()}`}</span>
+                  <Span>Property Price</Span>
+                  <Span
+                    two={true}
+                  >{`₦${productInfo?.financials?.propertyPrice?.toLocaleString()}`}</Span>
                 </div>
                 <div className="flex justify-between ">
-                  <span className="text-[10px]">Transaction cost</span>
-                  <span className="text-[13px] font-bold">{`${productInfo?.financials?.returns}%`}</span>
+                  <Span>Transaction cost</Span>
+                  <Span
+                    two={true}
+                  >{`${productInfo?.financials?.returns}%`}</Span>
                 </div>
                 <div className="flex justify-between align-top">
-                  <span className="text-[10px]">Fee</span>
-                  <span className="text-[13px] font-bold">{`${productInfo?.financials?.returns}%`}</span>
+                  <Span>Fee</Span>
+                  <Span
+                    two={true}
+                  >{`${productInfo?.financials?.returns}%`}</Span>
                 </div>
                 <hr />
                 <div className="flex justify-between align-top">
-                  <span className="text-[10px]">Investment Cost</span>
+                  <Span>Investment Cost</Span>
                   <span className="text-[13px] font-bold">{`₦${productInfo?.financials?.propertyPrice?.toLocaleString()}`}</span>
                 </div>
               </div>
@@ -118,9 +136,11 @@ const LearnMore = () => {
           )}
 
           <section>
-            <h4 className="font-semibold capitalize text-lg mb-3">Documents</h4>
+            <h4 className="font-semibold capitalize text-lg mt-8 my-5">
+              Documents
+            </h4>
 
-            <div className="grid grid-cols-3 gap-7 gap-y-5  w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-7 gap-y-5 w-full">
               {productInfo?.document?.map((each, index) => {
                 return (
                   <div

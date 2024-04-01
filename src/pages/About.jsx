@@ -12,10 +12,10 @@ const About = () => {
     <Main>
       <SectionHero first={`About`} second={`Us`} text={heroText} />
       <Container>
-        <section className="h-[70vh] rounded-xl overflow-hidden">
+        <section className=" h-[45vh] md:h-[70vh] rounded-xl overflow-hidden">
           <img src={about} className="w-full h-full object-cover" alt="" />
         </section>
-        <main className="w-[40%] border mx-auto my-5">
+        <main className="w-[95%] md:w-[40%]  mx-auto my-5">
           <h2 className="mb-5 leading-7 font-medium">
             Ellington Funds provides a full service range including Crowdfunding
             for real estate, agricultural investment, transportation investment,
