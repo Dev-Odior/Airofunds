@@ -1,13 +1,11 @@
-const FooterSpan = ({ children, font, noMb }) => {
+const FooterSpan = ({ children, font, noMb, className }) => {
   return (
     <span
       className={`
-      text-[#3C403C] 
-      font-semibold
-      font-bricolage
-      ${noMb ? noMb : "mb-2"}
-
-      ${font ? font : "text-[9px]"}`}
+      uppercase
+    text-white
+      font-normal font-inter opacity-50
+      ${className}`}
     >
       {children}
     </span>

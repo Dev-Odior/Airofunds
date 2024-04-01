@@ -9,6 +9,10 @@ import bed from "./bed.svg";
 import baththub from "./bathtub.svg";
 import pdf from "./pdf.svg";
 import download from "./download.svg";
+import footerline from "./footerline.svg";
+import facebook from "./facebook.svg";
+import twitter from "./twitter.svg";
+import instagram from "./instagram.svg";
 
 export {
   btnArrow,
@@ -22,4 +26,8 @@ export {
   baththub,
   pdf,
   download,
+  footerline,
+  facebook,
+  twitter,
+  instagram,
 };
