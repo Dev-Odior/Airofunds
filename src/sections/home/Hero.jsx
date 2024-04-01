@@ -24,7 +24,7 @@ const ImageLooper = ({ images }) => {
   }, [images]);
 
   return (
-    <div className="  flex flex-no-wrap gap-4 md:gap-5 -ml-4 md:ml-4 z-50">
+    <div className="  flex flex-no-wrap gap-4 md:gap-5 -ml-[0.3rem] md:ml-4 z-50">
       {images.map((image, index) => {
         const bgIndex = (index + currentIndex) % images.length;
         const style = {
@@ -37,7 +37,7 @@ const ImageLooper = ({ images }) => {
           <div
             key={index}
             style={style}
-            className="flex-shrink-0 z-40 w-[5rem] h-[100px] md:w-[10rem] md:h-[200px]  rounded-lg"
+            className="flex-shrink-0 z-40 w-[5rem] h-[80px] md:w-[10rem] md:h-[200px]  rounded-lg"
           ></div>
         );
       })}
@@ -95,7 +95,7 @@ const Hero = () => {
 
   return (
     <main
-      className="relative h-screen bg-cover bg-center transition-all duration-1000"
+      className="relative h-[80vh] mt-5 md:mt-0 md:h-screen bg-cover bg-center transition-all duration-1000"
       style={{ backgroundImage: `url(${bg[index].img})` }}
     >
       {/* Black overlay covering half of the width */}
