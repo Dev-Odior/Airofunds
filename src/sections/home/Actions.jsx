@@ -19,7 +19,7 @@ const Actions = () => {
             nam. Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique
             sapien magna convallis enim quam.
           </BodyText>
-          <Button name="learn more" light={true} />
+          <Button name="learn more" light={true} route={`/services`} />
         </div>
       </CallToAction>
     </Container>

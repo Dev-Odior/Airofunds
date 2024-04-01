@@ -24,7 +24,7 @@ const ImageLooper = ({ images }) => {
   }, [images]);
 
   return (
-    <div className="border  flex flex-no-wrap overflow-hidden">
+    <div className="  flex flex-no-wrap ">
       {images.map((image, index) => {
         const bgIndex = (index + currentIndex) % images.length;
         const style = {

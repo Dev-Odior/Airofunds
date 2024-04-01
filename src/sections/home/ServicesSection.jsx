@@ -27,7 +27,7 @@ const ServicesSection = () => {
           })}
         </ThreeCol>
 
-        <Button name={`Learn More`} />
+        <Button name={`Learn More`} route={"/services"} />
       </div>
     </Container>
   );
