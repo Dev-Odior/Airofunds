@@ -12,6 +12,39 @@ import {
   crowdfunding,
 } from "../../assets/images/bg";
 
+const ImageLooper = ({ images }) => {
+  const [currentIndex, setCurrentIndex] = useState(1);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000); // Adjust the interval as needed
+
+    return () => clearInterval(interval);
+  }, [images]);
+
+  return (
+    <div className="border  flex flex-no-wrap overflow-hidden">
+      {images.map((image, index) => {
+        const bgIndex = (index + currentIndex) % images.length;
+        const style = {
+          backgroundImage: `url(${images[bgIndex].img})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        };
+
+        return (
+          <div
+            key={index}
+            style={style}
+            className="flex-shrink-0 w-[10rem] h-[200px] m-5 rounded-lg"
+          ></div>
+        );
+      })}
+    </div>
+  );
+};
+
 const Hero = () => {
   // const bg = [project, agriculture, restaurant, transportation, crowdfunding];
 
@@ -75,14 +108,14 @@ const Hero = () => {
       {/* Content container */}
 
       <Container className="h-full  grid grid-cols-2">
-        <div className=" z-30 self-center px-5  font-poppins text-white">
-          <div className="w-[50%] mb-5">
-            <div className="glass border py-3 text-center rounded-lg  uppercase text-[11px]">
+        <div className=" z-30 self-center px-5 font-poppins text-white  mt-8">
+          <div className="w-[50%] mb-4">
+            <div className="glass  border-2 py-3 text-center rounded-lg uppercase transition-all duration-1000 text-[11px]">
               {bg[index].name}
             </div>
           </div>
 
-          <h1 className="text-[2.5rem]  font-semibold  capitalize ">
+          <h1 className="text-[2.5rem] leading-[3rem] font-semibold  capitalize ">
             Your Trusted Partner for Innovative{" "}
             <span className="text-[#FFBD00]">Investments</span> and{" "}
             <span className="text-[#FFBD00]">Fundraising</span>
@@ -93,12 +126,14 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-5">
-            <img src={google} alt="" className="h-12" />
-            <img src={apple} alt="" className="h-12" />
+            <img src={google} alt="" className="h-11" />
+            <img src={apple} alt="" className="h-11" />
           </div>
         </div>
 
-        <div className="border border-black"></div>
+        <div className="self-end">
+          <ImageLooper images={bg} />
+        </div>
       </Container>
     </main>
   );
