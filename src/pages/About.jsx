@@ -17,16 +17,16 @@ const About = () => {
         </section>
         <main className="w-[40%] border mx-auto my-5">
           <h2 className="mb-5 leading-7 font-medium">
-            Airofund provides a full service range including Crowdfunding for
-            real estate, agricultural investment, transportation investment,
+            Ellington Funds provides a full service range including Crowdfunding
+            for real estate, agricultural investment, transportation investment,
             donations, restaurant investment, Property investment etc.
           </h2>
           <BodyText>
-            Airofund offers tailored property investment opportunities, whether
-            you're looking to invest in residential, commercial, or industrial
-            properties. Our team of experts will guide you through the process,
-            ensuring you make informed decisions that align with your investment
-            objectives.
+            Ellington Funds offers tailored property investment opportunities,
+            whether you're looking to invest in residential, commercial, or
+            industrial properties. Our team of experts will guide you through
+            the process, ensuring you make informed decisions that align with
+            your investment objectives.
           </BodyText>
 
           <CardHeader className={`my-5`} cardTitle={`Investments Plan`} />

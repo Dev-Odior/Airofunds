@@ -91,7 +91,7 @@ const Footers = () => {
                       +234 (0) 818 587 0000
                     </span>
                   </Li>
-                  <Li>hello@airofund.com</Li>
+                  <Li>hello@Ellington Funds.com</Li>
                 </ul>
 
                 <span className="text-[10px] -mt-3 text-[#EBA414]">
