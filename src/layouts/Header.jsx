@@ -14,7 +14,7 @@ const Header = () => {
   const { navLinks } = useSelector((store) => store.nav);
 
   return (
-    <header className="flex shadow-md bg-white py-4 md:py-1 fixed top-0 z-[9999999] w-full">
+    <header className="flex shadow-md bg-white py-3 md:py-1 fixed top-0 z-[9999999] w-full">
       <Container>
         <div className="flex items-center justify-between py-2">
           <div className="flex w-2/3 overflow-visible relative items-center">
@@ -22,7 +22,7 @@ const Header = () => {
             <img
               src={logo}
               alt=""
-              className="h-7  md:h-[40px] mr-14 ml-3"
+              className="h-9  md:h-[40px] mr-14 ml-3"
               onClick={() => navigate("/")}
             />
             <div className="relative flex-1">

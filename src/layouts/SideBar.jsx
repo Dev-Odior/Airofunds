@@ -38,7 +38,6 @@ const SideBar = () => {
       <CloseButton />
       <div className="border-t h-[85%] overflow-auto px-2 pt-5">
         {nav.map((links, index) => {
-          console.log(links);
           return <SidebarItem key={index} links={links} />;
         })}
       </div>

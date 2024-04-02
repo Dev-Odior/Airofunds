@@ -4,7 +4,7 @@ import { SectionHero } from "../components/ui";
 
 const ContactUs = () => {
   return (
-    <Main>
+    <Main hide={true}>
       <SectionHero first={`Contact`} second={`Us`} text="Send us a message" />
       <FormComponent />
     </Main>

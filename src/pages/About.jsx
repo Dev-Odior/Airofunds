@@ -1,11 +1,11 @@
 import { SectionHero } from "../components/ui";
 import { Main } from "../components/pageTemplate";
-import { BodyText, CardHeader, HeaderBody } from "../components/text";
+import { BodyText, CardHeader } from "../components/text";
 import { about } from "../assets/images/about";
 import { Container } from "../layouts";
 
 const heroText =
-  "Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique sapien magna convallis enim quam. Vitae auctor vestibulum viverra lobortis a habitant adipiscing. Molestie nulla feugiat euismod fermentum ipsum tortor pellentesque. Quis sagittis tempor facilisi nam.";
+  "Ellington Funds offers tailored property investment opportunities, whether you're looking to invest in residential, commercial, or industrial properties. Our team of experts will guide you through the process, ensuring you make informed decisions that align with your investment objectives.";
 
 const About = () => {
   return (
@@ -74,8 +74,6 @@ const About = () => {
               </svg>
               <BodyText className={` m-0`}>Handling In house</BodyText>
             </div>
-
-            <BodyText></BodyText>
           </ul>
 
           <BodyText>

@@ -12,6 +12,7 @@ const SidebarItem = ({ links }) => {
   const navigateHandler = (path) => {
     navigate(path);
     dispatch(toggleSidebar());
+    window.scrollTo(0, 0);
     setOpen(false);
   };
 
