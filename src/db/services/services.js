@@ -100,4 +100,4 @@ export const servicesNav = [
   { name: "mortgages", active: false, id: "mortgages" },
 ];
 
-export const text = `Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique sapien magna convallis enim quam. Vitae auctor vestibulum viverra lobortis a habitant adipiscing. Molestie nulla feugiat euismod fermentum ipsum tortor pellentesque. Quis sagittis tempor facilisi nam.`;
+export const text = `Discover Ellington Funds: Your Gateway to Property investment, Agriculture, Funding, Crowdfunding for real estate, Restaurant investment, donation, and Transportation Investment Opportunities, all in one place.`;

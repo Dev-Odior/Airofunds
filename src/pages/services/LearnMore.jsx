@@ -5,7 +5,11 @@ import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BodyText } from "../../components/text";
 import { useEffect } from "react";
-import { moreInfoHandler } from "../../state/servicesReducer/servicesReducer";
+import {
+  moreInfoHandler,
+  serviceActiveNav,
+} from "../../state/servicesReducer/servicesReducer";
+
 import { download, pdf } from "../../assets/icons";
 import { Button } from "../../components/button";
 
@@ -16,6 +20,7 @@ const LearnMore = () => {
   const { products, id } = useParams();
 
   useEffect(() => {
+    dispatch(serviceActiveNav(products));
     dispatch(moreInfoHandler(id));
   }, []);
 
@@ -47,15 +52,15 @@ const LearnMore = () => {
         </button>
         <div className="flex flex-col md:flex-row gap-2 items-stretch">
           <div>
-            <img src={productInfo?.extraImages[0]} alt="" />
+            <img src={productInfo?.extraImages?.[0]} alt="" />
           </div>
 
           <div className="flex flex-grow">
             <div className="grid grid-cols-2 gap-2">
-              <img src={productInfo?.extraImages[1]} alt="" />
-              <img src={productInfo?.extraImages[2]} alt="" />
-              <img src={productInfo?.extraImages[3]} alt="" />
-              <img src={productInfo?.extraImages[4]} alt="" />
+              <img src={productInfo?.extraImages?.[1]} alt="" />
+              <img src={productInfo?.extraImages?.[2]} alt="" />
+              <img src={productInfo?.extraImages?.[3]} alt="" />
+              <img src={productInfo?.extraImages?.[4]} alt="" />
             </div>
           </div>
         </div>

@@ -36,7 +36,6 @@ const servicesSlice = createSlice({
     moreInfoHandler: (state, action) => {
       const name = action.payload;
 
-      console.log(state.singleProductPage.products);
       const single = state.singleProductPage.products.find((item) => {
         return item.title.toLowerCase() === name;
       });

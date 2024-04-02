@@ -12,7 +12,7 @@ const FormComponent = () => {
             first="Contact"
             second="us"
             dark={true}
-            margin="mb-3 -mt-3"
+            margin="mb-3 md:mb-2 -mt-3"
           />
           <FormInput label="name" placeHolder="[Your Name]" />
           <FormInput label="email" placeHolder="[Your Email]" />

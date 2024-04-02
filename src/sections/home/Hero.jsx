@@ -1,8 +1,6 @@
 import { Container } from "../../layouts";
 import { motion } from "framer-motion";
-// import { bg } from "../../assets/images/bg/bg.jpeg";
 import { google, apple } from "../../assets/images/actionBtn";
-import { servicesNav } from "../../db/services/services";
 import { useState, useEffect } from "react";
 import {
   project,
@@ -18,7 +16,7 @@ const ImageLooper = ({ images }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000); // Adjust the interval as needed
+    }, 5000);
 
     return () => clearInterval(interval);
   }, [images]);
@@ -46,8 +44,6 @@ const ImageLooper = ({ images }) => {
 };
 
 const Hero = () => {
-  // const bg = [project, agriculture, restaurant, transportation, crowdfunding];
-
   const [index, setIndex] = useState(0);
 
   const bg = [

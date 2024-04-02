@@ -10,7 +10,7 @@ import { ProductCard } from "../../components/card";
 
 const Products = () => {
   const dispatch = useDispatch();
-  const { nav, singleProductPage } = useSelector((store) => store.services);
+  const { singleProductPage } = useSelector((store) => store.services);
 
   const { products } = useParams();
 
