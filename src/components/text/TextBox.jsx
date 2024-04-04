@@ -27,6 +27,7 @@ const TextBox = ({ content, img, btnText, title, list, position, hideBtn }) => {
       {/* The Image */}
       <img
         src={img}
+        loading="lazy"
         alt=""
         className="md:h-60 hover:-translate-y-2 duration-300 transition-all ease-linear"
       />

@@ -41,7 +41,7 @@ const SideBar = () => {
           return <SidebarItem key={index} links={links} />;
         })}
       </div>
-      <img src={logo} alt="" className="h-10 mx-auto" />
+      <img loading="lazy" src={logo} alt="" className="h-10 mx-auto" />
     </motion.div>
   );
 };

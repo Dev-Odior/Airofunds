@@ -13,7 +13,12 @@ const ServiceMain = () => {
             className="mx-auto w-full md:w-[70%] p-2 md:p-5 grid  grid-cols-1 md:grid-cols-2 gap-10 mb-10 shadow-md"
             key={index}
           >
-            <img src={each.largeImg} className="h-[18rem]" alt="" />
+            <img
+              src={each.largeImg}
+              loading="lazy"
+              className="h-[18rem]"
+              alt=""
+            />
             <div>
               <CardHeader cardTitle={each.title} />
               <BodyText>{each.desc}</BodyText>

@@ -52,15 +52,15 @@ const LearnMore = () => {
         </button>
         <div className="flex flex-col md:flex-row gap-2 items-stretch">
           <div>
-            <img src={productInfo?.extraImages?.[0]} alt="" />
+            <img loading="lazy" src={productInfo?.extraImages?.[0]} alt="" />
           </div>
 
           <div className="flex flex-grow">
             <div className="grid grid-cols-2 gap-2">
-              <img src={productInfo?.extraImages?.[1]} alt="" />
-              <img src={productInfo?.extraImages?.[2]} alt="" />
-              <img src={productInfo?.extraImages?.[3]} alt="" />
-              <img src={productInfo?.extraImages?.[4]} alt="" />
+              <img loading="lazy" src={productInfo?.extraImages?.[1]} alt="" />
+              <img loading="lazy" src={productInfo?.extraImages?.[2]} alt="" />
+              <img loading="lazy" src={productInfo?.extraImages?.[3]} alt="" />
+              <img loading="lazy" src={productInfo?.extraImages?.[4]} alt="" />
             </div>
           </div>
         </div>

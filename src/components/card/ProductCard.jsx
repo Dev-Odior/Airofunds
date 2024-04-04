@@ -37,6 +37,7 @@ const ProductCard = ({
       >
         <motion.img
           src={img}
+          loading="lazy"
           alt=""
           className="w-full h-full object-cover hover:scale-125 transition-all ease-linear duration-[10s]"
         />

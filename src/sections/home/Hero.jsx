@@ -117,8 +117,8 @@ const Hero = () => {
           </p>
 
           <div className="flex gap-5">
-            <img src={google} alt="" className="h-11" />
-            <img src={apple} alt="" className="h-11" />
+            <img loading="lazy" src={google} alt="" className="h-11" />
+            <img loading="lazy" src={apple} alt="" className="h-11" />
           </div>
         </div>
 

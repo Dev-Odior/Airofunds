@@ -6,7 +6,12 @@ const FormComponent = () => {
   return (
     <Container>
       <div className="flex md:flex-row flex-col justify-center gap-10  w-full md:w-[90%] mx-auto my-10">
-        <img src={formimg} alt="" className="md:h-[30rem] h-[20rem]" />
+        <img
+          src={formimg}
+          loading="lazy"
+          alt=""
+          className="md:h-[30rem] h-[20rem]"
+        />
         <form className=" w-full md:w-[32%] px-4 flex flex-col">
           <Heading
             first="Contact"
