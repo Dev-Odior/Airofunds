@@ -15,7 +15,7 @@ const Header = () => {
 
   return (
     <header className="flex shadow-md bg-white py-3 md:py-1 fixed top-0 z-[9999999] w-full">
-      <Container>
+      <Container className={`w-[98%]`}>
         <div className="flex items-center justify-between py-2">
           <div className="flex w-2/3 overflow-visible relative items-center">
             {/* <AnimatePresence> {openNavModal && <NavModal />}</AnimatePresence> */}

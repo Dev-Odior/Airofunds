@@ -30,9 +30,9 @@ const Button = ({
       onClick={onClickHandler}
       whileTap={{ scale: 0.95 }}
       className={`
-      ${size ? size : " text-[6px] md:text-[8px]"} 
+      ${size ? size : " text-[10px] md:text-[9px]"} 
       ${border ? border : "border-[1.3px]"}
-      ${padding ? padding : "py-[0.5rem] p-6 md:py-2 md:p-7"}
+      ${padding ? padding : "py-[0.5rem] px-10 md:py-2 md:px-7"}
       ${
         light
           ? "border-white"

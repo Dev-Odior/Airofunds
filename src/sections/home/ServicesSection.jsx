@@ -9,7 +9,7 @@ const ServicesSection = () => {
   const { home, info } = useSelector((store) => store.services);
   return (
     <Container>
-      <div className="flex flex-col justify-center items-center gap-5 my-16">
+      <div className="flex flex-col justify-center items-center gap-5  my-8 md:my-16">
         <HeaderBody first={`our`} second={"services"} dark={true} text={info} />
         <ThreeCol>
           {home.map((service, index) => {

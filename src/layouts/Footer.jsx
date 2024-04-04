@@ -20,7 +20,7 @@ const Footers = () => {
   const { nav } = useSelector((store) => store.nav);
 
   return (
-    <div className="bg-[#212121]  py-16">
+    <div className="bg-[#212121] py-10 md:py-16 px-2">
       <Container className={`w-[92%] md:w-[90%]`}>
         <div className="flex justify-between flex-col md:flex-row">
           {/* For the logo on the left  */}
@@ -73,7 +73,7 @@ const Footers = () => {
               </section>
 
               <p className="text-[11px] font-inter  mx-0 text-white">
-                Ellington funds a product of Charleston bank
+                Ellington funds a product of Ellington bank
                 <br /> regulated by central bank
               </p>
 
