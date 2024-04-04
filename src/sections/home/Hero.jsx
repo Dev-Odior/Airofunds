@@ -22,7 +22,7 @@ const ImageLooper = ({ images }) => {
   }, [images]);
 
   return (
-    <div className="  flex flex-no-wrap gap-4 md:gap-5 -ml-[0.3rem] md:ml-4 z-50">
+    <div className="  flex flex-no-wrap gap-4 md:gap-5 ml-[8rem] md:ml-4 z-50">
       {images.map((image, index) => {
         const bgIndex = (index + currentIndex) % images.length;
         const style = {
@@ -98,7 +98,6 @@ const Hero = () => {
       <div className="absolute inset-y-0 left-0 bg-black opacity-70 w-full md:w-1/2"></div>
 
       {/* Content container */}
-
       <Container className="h-full  grid grid-cols-1 md:grid-cols-2 py-5">
         <div className=" z-30 self-center px-1 md:px-5 font-poppins text-white mt-8">
           <div className="w-[55%] md:w-[50%] mb-4">
