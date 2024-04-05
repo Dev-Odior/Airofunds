@@ -1,6 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
 import { nav, navLinks } from "../../db/navLinks";
-// import { productInfoContent } from "../../db/content";
 const initialState = {
   nav,
   navLinks: navLinks,
@@ -13,6 +12,16 @@ const navSlice = createSlice({
   name: "nav",
   initialState,
   reducers: {
+    activePage: (state, action) => {
+      const name = action.payload;
+      state.navLinks = state.navLinks.map((nav) => {
+        if (name === nav.title) {
+          return { ...nav, active: true };
+        } else {
+          return { ...nav, active: false };
+        }
+      });
+    },
     toggleModal: (state, _) => {
       state.openNavModal = !state.openNavModal;
     },
@@ -47,6 +56,11 @@ const navSlice = createSlice({
   },
 });
 
-export const { toggleModal, populateNavLInks, toggleSidebar, toggleWidget } =
-  navSlice.actions;
+export const {
+  toggleModal,
+  populateNavLInks,
+  toggleSidebar,
+  toggleWidget,
+  activePage,
+} = navSlice.actions;
 export default navSlice.reducer;

@@ -1,7 +1,7 @@
-import main from "./main.png";
-import sub from "./sub.png";
-import subTwo from "./subTwo.png";
-import subThree from "./subThree.png";
-import subFour from "./subFour.png";
+// import main from "./main.jpg";
+import sub from "./sub.jpg";
+import subTwo from "./subTwo.jpg";
+import subThree from "./subThree.jpg";
+import subFour from "./subFour.jpg";
 
-export { main, sub, subThree, subTwo, subFour };
+export { sub, subThree, subTwo, subFour };

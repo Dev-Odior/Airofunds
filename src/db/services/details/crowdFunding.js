@@ -10,7 +10,7 @@ import {
 } from "../../../assets/images/services/crowdfunding/card";
 
 import {
-  main as crowdMain,
+  // main as crowdMain,
   sub as crowdSub,
   subTwo as crowdSubTwo,
   subThree as crowdSubThree,
@@ -25,13 +25,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding1",
       img: crowdOne,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {
@@ -56,13 +50,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding2",
       img: crowdTwo,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {
@@ -87,13 +75,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding3",
       img: crowdThree,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {
@@ -118,13 +100,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding4",
       img: crowdFour,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {
@@ -149,13 +125,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding5",
       img: crowdFive,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {
@@ -180,13 +150,7 @@ export const crowdFunding = {
     {
       id: "crowdfunding6",
       img: crowdSix,
-      extraImages: [
-        crowdMain,
-        crowdSub,
-        crowdSubTwo,
-        crowdSubThree,
-        crowdSubFour,
-      ],
+      extraImages: [null, crowdSub, crowdSubTwo, crowdSubThree, crowdSubFour],
       title: "Lekki Phase 1 Lagos Island",
       info: { location: "Lekki Phase 1", bedroom: 2 },
       financials: {

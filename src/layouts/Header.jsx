@@ -7,11 +7,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { toggleSidebar } from "../state/modals/modalsReducer";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { activePage } from "../state/nav/navReducer";
 
 const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { navLinks } = useSelector((store) => store.nav);
+
+  const activePageHandler = (name, route) => {
+    dispatch(activePage(name));
+    navigate(route);
+  };
 
   return (
     <header className="flex shadow-md bg-white py-3 md:py-1 fixed top-0 z-[9999999] w-full">
@@ -42,18 +48,17 @@ const Header = () => {
               >
                 {navLinks.map((link, index) => {
                   return (
-                    <Link key={index} to={link.route}>
-                      <li
-                        className={`relative ${
-                          link.active ? "text-black font-extrabold" : ""
-                        }
+                    <li
+                      onClick={() => activePageHandler(link.title, link.route)}
+                      className={`relative ${
+                        link.active ? "text-black font-extrabold" : ""
+                      }
                       cursor-pointer
                       `}
-                        key={index}
-                      >
-                        {link?.title}
-                      </li>
-                    </Link>
+                      key={index}
+                    >
+                      {link?.title}
+                    </li>
                   );
                 })}
               </ul>
