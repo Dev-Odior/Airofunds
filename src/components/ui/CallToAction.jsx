@@ -1,5 +1,6 @@
 import { cta } from "../../assets/images/general";
 import { Button } from "../button";
+import { google, apple } from "../../assets/images/actionBtn";
 
 const CallToAction = ({ title, btnText, children, customImg }) => {
   return (
@@ -56,9 +57,15 @@ const CallToAction = ({ title, btnText, children, customImg }) => {
           >
             {title
               ? title
-              : "Would you like more information about our platform?"}
+              : "Would you like to get our App ? Click the buttons below"}
           </h3>
-          <Button name={btnText ? btnText : "contact us"} light="text-white" />
+
+          {/* <Button name={btnText ? btnText : "contact us"} light="text-white" /> */}
+
+          <div className="flex gap-5">
+            <img loading="lazy" src={google} alt="" className="h-8 md:h-11" />
+            <img loading="lazy" src={apple} alt="" className="h-8 md:h-11" />
+          </div>
         </div>
       )}
     </div>
