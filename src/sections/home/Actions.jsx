@@ -16,12 +16,10 @@ const Actions = () => {
             size="text-[27px] md:text-[30px]"
           />
           <BodyText light={true} center={true} white={true}>
-            Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique
-            sapien magna convallis enim quam. Vitae auctor vestibulum viverra
-            lobortis a habitant adipiscing. Molestie nulla feugiat euismod
-            fermentum ipsum tortor pellentesque. Quis sagittis tempor facilisi
-            nam. Lorem ipsum dolor sit amet consectetur. Sit sed massa tristique
-            sapien magna convallis enim quam.
+            Discover Ellington Funds: Your Gateway to Property Investment,
+            Agriculture Funding, Crowdfunding for Real Estate, Restaurant
+            Investment, Donation and Transportation Investment Opportunities all
+            in one place.
           </BodyText>
           <Button name="learn more" light={true} route={`/services`} />
         </div>
