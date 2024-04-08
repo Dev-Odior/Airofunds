@@ -1,25 +1,24 @@
 import {
-  Home,
-  NotFound,
-  ContactUs,
-  Terms,
-  PrivacyPolicy,
-  Delete,
-  About,
+  // Home,
+  // NotFound,
+  // ContactUs,
+  // Terms,
+  // PrivacyPolicy,
+  // Delete,
+  // About,
+  UnderRepair,
 } from "../pages";
 
-import {
-  Services,
-  ServiceMain,
-  Products,
-  LearnMore,
-  Mortgage,
-} from "../pages/services";
+import // Services,
+// ServiceMain,
+// Products,
+// LearnMore,
+// Mortgage,
+"../pages/services";
 
-import {
-  Products as MortgageProduct,
-  BreakDown,
-} from "../pages/services/mortgages";
+import // Products as MortgageProduct,
+// BreakDown,
+"../pages/services/mortgages";
 
 import { Route, Routes, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -33,7 +32,8 @@ const Routers = () => {
 
   return (
     <Routes location={location} key={location.pathname}>
-      <Route path="/" Component={Home} />
+      {/* <Route path="/" Component={UnderRepair}></Route> */}
+      {/* <Route path="/" Component={Home} />
       <Route path="/terms" Component={Terms} />
       <Route path="/privacy-policy" Component={PrivacyPolicy} />
       <Route path="/delete-account" Component={Delete} />
@@ -50,9 +50,9 @@ const Routers = () => {
           />
         </Route>
         <Route path="/services/:products/:id" Component={LearnMore} />
-      </Route>
+      </Route> */}
 
-      <Route path="*" Component={NotFound} />
+      <Route path="*" Component={UnderRepair} />
     </Routes>
   );
 };

@@ -13,6 +13,7 @@ import footerline from "./footerline.svg";
 import facebook from "./facebook.svg";
 import twitter from "./twitter.svg";
 import instagram from "./instagram.svg";
+import repair from "./repair-tools.gif";
 
 export {
   btnArrow,
@@ -30,4 +31,5 @@ export {
   facebook,
   twitter,
   instagram,
+  repair,
 };
