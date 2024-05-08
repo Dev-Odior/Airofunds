@@ -34,7 +34,7 @@ const Delete = () => {
         please continue with caution.
       </BodyText>
       <form className="mb-5">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mb-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-10">
           <Input label={`Provide Email Address`} type="text" />
           <div className="flex flex-col">
             <label className="text-[#1A1A1ACC] text-sm font-bold">
@@ -45,7 +45,7 @@ const Delete = () => {
           <Input label={`Provide your password`} type="text" />
         </div>
         <button
-          className="px-8 py-2 text-sm   rounded-full
+          className="px-16 py-4 text-sm   rounded-full
       font-roboto
       font-normal
       uppercase 
