@@ -1,3 +1,3 @@
-import logo from "./ellington__funds.png";
+import logo from "./airofunds.png";
 
 export { logo };
